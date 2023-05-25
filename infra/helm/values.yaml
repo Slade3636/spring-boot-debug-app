@@ -43,3 +43,14 @@ envs:
     value: <path:kv-v2/data/demo#user>
   - name: VAULT_SECRET_PASSWORD
     value: <path:kv-v2/data/demo#password>
+    
+logging:
+  level:
+    spring: "info"
+    service: "info"
+  json:
+    enabled: false
+
+monitoring:
+  prometheus:
+    enabled: false
