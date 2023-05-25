@@ -39,16 +39,7 @@ ports:
     value: 8081
 
 envs:
-  - name: EXTRA_HELM_ENV
-    value: EXTRA_HELM_VALUE
-
-logging:
-  level:
-    spring: "info"
-    service: "info"
-  json:
-    enabled: false
-
-monitoring:
-  prometheus:
-    enabled: false
+  - name: VAULT_SECRET_USER
+    value: <path:kv-v2/data/demo#user>
+  - name: VAULT_SECRET_PASSWORD
+    value: <path:kv-v2/data/demo#password>
