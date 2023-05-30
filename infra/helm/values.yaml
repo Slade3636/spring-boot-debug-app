@@ -1,5 +1,5 @@
 serviceAccount:
-  create: false
+  create: true
 
 image:
   repository: luafanti/spring-boot-debug-app
